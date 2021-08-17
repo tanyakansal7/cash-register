@@ -2,7 +2,7 @@ const billAmount= document.getElementById("bill-amount");
 const cashGiven=document.getElementById("cash-given");
 const checkButton=document.getElementById("check-button");
 const message= document.getElementById("error-message");
-const availableNotes=[2000,500,200,100,50,20,10,5];
+const availableNotes=[2000,500,200,100,50,20,10,5,1];
 const noOfNotes=document.querySelectorAll(".no-of-notes")
 checkButton.addEventListener("click",function validateBillAndCashAmount() {
    hideMessage();
@@ -14,7 +14,8 @@ calculateChange(amountToBeReturned);
   showMessage("Do your wanna wash plates");
 }
     }else{
-       showMessage("Invalid Bill Amopunt Entered.");
+       showMessage("Invalid Bill Amount Entered.");
+       billAmount.style.border="1px solid red";
     }
 
 });

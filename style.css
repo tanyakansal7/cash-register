@@ -67,6 +67,9 @@ table, th, td {
       width: 20%;
   }
   td{
-      width: 10%;
+      width: 5%;
       text-align: center;
+  }
+  #error-message{
+      color: rgb(245, 26, 26);
   }
